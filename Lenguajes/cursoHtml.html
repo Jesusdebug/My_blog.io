@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Html</title>
+</head>
+
+<body>
+    <!-- aqui vamos a montar el mismo header usado en la pagina pricipal -->
+    <div class="content">
+        <!-- Vamos a montar un para de imagenes para integrarlo a ada imagen que subamos  -->
+
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+        </map>
+    </div>
+    <div class="evaluavion">
+
+        <form action="">
+            <!-- las etiquetas fieldset y legend se usan para agurpar datos relacionados en un formulario 
+        legendi define el titulo y fielset encierrra la familia-->
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="name">Nombres</label>
+                <input type="text" id="name" name="name">
+                <label for="apellido">Apellidos</label>
+                <input type="text" id="apellido" name="apellido">
+            </fieldset>
+        </form>
+        <section>
+            <form class="prueba" action="">
+                <form action="">
+                    <!-- formulario y sus tipos :: radio -->
+                    <input type="radio" id="html" name="html" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="radio" id="css" name="css">
+                    <label for="css">css</label>
+                    <!-- casillas de verificacion:: propiedad checkbox ; esto permite seleccionar una o varias opciones-->
+                    <input type="checkbox" name="html" id="html">
+                    <label for="html">html</label>
+                    <input type="checkbox" id="css" name="css">
+                    <label for="css">css</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label for="js">JavaScript</label><br>
+                    <!-- Seleccionar un elemento -->
+                    <label for="etiquetas">Elija la etiquta correcta</label>
+                    <select id="etiquetas" name="etiquetas">
+                        <option value="htmll">html`</option>
+                        <option value="css">css</option>
+                        <option value="js">JavaScript</option>
+                    </select><br>
+                    <!-- Textarea un lugar para introducir texto: rows especifica el numero visitble de linas y cols el ancho -->
+                    <textarea name="descripcion" rows="10" cols="30">
+                        escribe algo
+                      </textarea>
+                    <!-- Se define para dar click -->
+                    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+                    <!-- definir el tipo de tipo : date, -->
+                    <label for="origen">Fecha de inicio del curso</label>
+                    <input type="date" id="origen" name="origen">
+                    <!-- Podemos darle una restrcion de fechas usando min max-->
+                    <label for="fechaMax">entre 2000-12-12</label>
+                    <input type="date" name="fechaMax" id="inicio" max="2000-12-12">
+                    <label for="fechaMin"> antes de 2030-12-12</label>
+                    <input type="date" id="fechaMin" name="Fechafinal" min="2030-12-12">
+                    <!-- readonly se usa para que el usuario no mpueda modificar el campo pero si pueda compiarlo -->
+                    <textarea readonly>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure hic beatae facere corrupti autem suscipit repudiandae itaque quae saepe laborum!
+                      </textarea>
+                      
+
+
+                </form>
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>
